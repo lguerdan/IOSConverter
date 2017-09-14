@@ -37,11 +37,11 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="149" height="96.5"/>
                                                                         <subviews>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Whole #" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hch-s8-Zwg">
-                                                                                <rect key="frame" x="29" y="34" width="92" height="30"/>
+                                                                                <rect key="frame" x="29.5" y="34" width="91" height="30"/>
                                                                                 <color key="backgroundColor" red="0.96897348206058331" green="0.98422827295055371" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <color key="tintColor" red="0.3384853976420909" green="0.3575898178552292" blue="0.55059909326424872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <color key="textColor" red="0.094102360309999994" green="0.094126455489999997" blue="0.09410081059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
                                                                                 <textInputTraits key="textInputTraits"/>
                                                                             </textField>
                                                                         </subviews>
@@ -60,7 +60,7 @@
                                                                                     <constraint firstAttribute="width" constant="45" id="MQ7-DT-8AU"/>
                                                                                 </constraints>
                                                                                 <nil key="textColor"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
                                                                             </textField>
                                                                         </subviews>
@@ -94,7 +94,7 @@
                                                                                     <constraint firstAttribute="height" constant="45" id="imu-Ss-HIf"/>
                                                                                 </constraints>
                                                                                 <nil key="textColor"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
                                                                             </textField>
                                                                         </subviews>
@@ -136,12 +136,22 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiH-dz-ciY">
                                                 <rect key="frame" x="0.0" y="97.5" width="375" height="48.5"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Is Equivalent To" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="FSm-Vt-BUB">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aE1-kz-CHc">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="48.5"/>
-                                                        <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="35"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="is equivalent to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7F3-LA-63x">
+                                                                <rect key="frame" x="119" y="7" width="148" height="33"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="7F3-LA-63x" firstAttribute="centerX" secondItem="aE1-kz-CHc" secondAttribute="centerX" id="4uv-je-b1e"/>
+                                                            <constraint firstItem="7F3-LA-63x" firstAttribute="centerY" secondItem="aE1-kz-CHc" secondAttribute="centerY" id="BlH-wd-3ij"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ma-Lm-Dzw">
@@ -150,10 +160,10 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQv-VG-G00">
                                                         <rect key="frame" x="0.0" y="0.0" width="312.5" height="96"/>
                                                         <subviews>
-                                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TEST" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NwC-sS-cwV">
-                                                                <rect key="frame" x="131" y="37" width="82" height="31"/>
+                                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Conversion" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NwC-sS-cwV">
+                                                                <rect key="frame" x="100" y="33" width="112" height="31"/>
                                                                 <nil key="textColor"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
