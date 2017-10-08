@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550D850D1F89A5D000DE6EC4 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550D850C1F89A5CF00DE6EC4 /* model.swift */; };
 		F44CAA8F1F69E71D00A8319B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44CAA8E1F69E71D00A8319B /* AppDelegate.swift */; };
 		F44CAA911F69E71D00A8319B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44CAA901F69E71D00A8319B /* ViewController.swift */; };
 		F44CAA941F69E71D00A8319B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44CAA921F69E71D00A8319B /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		550D850C1F89A5CF00DE6EC4 /* model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = model.swift; path = IOSConverter/model.swift; sourceTree = "<group>"; };
 		F44CAA8B1F69E71D00A8319B /* IOSConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44CAA8E1F69E71D00A8319B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F44CAA901F69E71D00A8319B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		F44CAA821F69E71D00A8319B = {
 			isa = PBXGroup;
 			children = (
+				550D850C1F89A5CF00DE6EC4 /* model.swift */,
 				F44CAA8D1F69E71D00A8319B /* IOSConverter */,
 				F44CAA8C1F69E71D00A8319B /* Products */,
 			);
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44CAA911F69E71D00A8319B /* ViewController.swift in Sources */,
+				550D850D1F89A5D000DE6EC4 /* model.swift in Sources */,
 				F44CAA8F1F69E71D00A8319B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
