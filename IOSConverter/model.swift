@@ -30,6 +30,8 @@ class IOSCOnverter {
     var num: String
     var denom: String
     
+    
+    //We can add any other converstions below idk what all we wanted to include
     let distanceToMeters: [InputConverter] = [
         InputConverter(unit: "feet", conversion: { (input) -> Double in
             return input * 0.3048
