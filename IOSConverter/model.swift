@@ -32,7 +32,7 @@ class IOSCOnverter {
     
     
     //We can add any other converstions below idk what all we wanted to include
-    let distanceToMeters: [InputConverter] = [
+    static let distanceToMeters: [InputConverter] = [
         InputConverter(unit: "feet", conversion: { (input) -> Double in
             return input * 0.3048
         }),
@@ -49,7 +49,7 @@ class IOSCOnverter {
             return input
         }) ]
     
-    let metersToDistance: [OutputConvertor] = [
+    static let metersToDistance: [OutputConvertor] = [
         OutputConvertor(unit: "feet", conversion: { (input) -> Double in
             return input / 0.3048
         }),
@@ -67,7 +67,7 @@ class IOSCOnverter {
         })
     ]
     
-    let volumeToCups: [InputConverter] = [
+    static let volumeToCups: [InputConverter] = [
         InputConverter(unit: "pints", conversion: { (input) -> Double in
             return input * 2
         }),
@@ -79,7 +79,7 @@ class IOSCOnverter {
         })
     ]
     
-    let cupsToVolume: [OutputConvertor] = [
+    static let cupsToVolume: [OutputConvertor] = [
         OutputConvertor(unit: "pints", conversion: { (input) -> Double in
             return input / 2
         }),
@@ -154,17 +154,23 @@ class IOSCOnverter {
     }
     
     func calculateConversion(convertFrom input: InputConverter, convertTo output: OutputConvertor) -> Double {
-        // conversion rate variable
         return output.conversion(input.conversion(self.inputNum()))
     }
  
 }
 
-//let model = IOSCOnverter(convertFrom: Units.Feet, convertTo: Units.Inches)
+//var model = IOSCOnverter(convertFrom: IOSCOnverter.distanceToMeters.first!, convertTo: IOSCOnverter.metersToDistance.first!)
 //model.append(digit: 1, field: .MainBox)
 //model.append(digit: 0, field: .MainBox)
 //model.append(digit: 9, field: .MainBox)
 //model.append(digit: 5, field: .Num)
 //model.append(digit: 6, field: .Denom)
 //print(model.inputNum())
+
+
+
+
+
+
+
 
